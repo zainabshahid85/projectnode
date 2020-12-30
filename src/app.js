@@ -19,7 +19,7 @@ log.listen(port, ()=>{
 }
 ) 
 mongoose
-  .connect("mongodb://localhost/onlinestore", {
+  .connect("mongodb://localhost/paintingstore", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
