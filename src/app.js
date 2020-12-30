@@ -1,6 +1,7 @@
 const express = require("express");
 const log = express();
 const path = require("path");
+
 require("./db/connection");
 
 const port = process.env.PORT || 4000;
