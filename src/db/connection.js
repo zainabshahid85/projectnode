@@ -1,16 +1,18 @@
+
 const mongoose = require("mongoose");
 
-mongoose.connect( "mongodb+srv://zainab:style.pk@cluster0.nzaxw.mongodb.net/<project>?retryWrites=true&w=majority",{
+const URI =
+  "mongodb+srv://zainab:style.pk@cluster0.nzaxw.mongodb.net/<project>?retryWrites=true&w=majority";
 
-  useNewUrlParser:true,
+const connectDB = async () => {
+  await mongoose.connect(URI, {
     useUnifiedTopology: true,
-    useCreateIndex: true,
-  }).then(() => {
+    useNewUrlParser: true,
+  });
   console.log("Connection Established");
-}).catch((e) => {
-    console.log("no connection");
-})
-  
+};
+
+module.exports = connectDB;
 
 
 
