@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Form </title>
+	<link rel="stylesheet" href="log.css">
+<script src="login.js"></script>
+</head>
+<body>
+	
+<div class="wrapper">
+	<div class="header">
+		<div class="logo">
+			<p>Art&Sketches</p>
+		</div>
+		<div class="menu">
+			<ul>
+				<li class="active"><a>Login</a></li>
+				<li><a>Aboutus</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main_container">
+		<div class="main_item login_wrap" style="display: block;">
+			<div class="title">Nice to see you!!</div>
+			<div class="form">
+				<form method="post" action="home.html" onsubmit="return validate(event);">
+					<div class="form_wrap">
+						<label for="uname">Username</label>
+						<div class="input_field">
+							<input type="text" class="input" name="username" id="uname">
+							<i class="fas fa-user"></i>
+						</div>
+						<div class="error_msg" id="un_err_msg"></div>
+					</div>
+					<div class="form_wrap">
+						<label for="password">Password</label>
+						<div class="input_field">
+							<input type="password" class="input" name="password" id="password">
+							<i class="fas fa-key"></i>
+						</div>
+						<div class="error_msg" id="pw_err_msg"></div>
+					</div>
+					<div class="form_wrap">
+						
+					<a href="home.html"><input type="submit" value="Login" >
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="main_item aboutus" style="display: none;">
+			<div class="title">About US</div>
+			<p>We can run a website in which a different painting and sketches are provide to buy and you can place an order to get a painting of your own wish or you can buy a painting provide in the website.</p>
+			
+			<div class="content">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="login.js"></script>
+
+</body>
+</html>
